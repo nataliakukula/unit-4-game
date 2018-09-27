@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Crystal Collector Game</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="header">Crystal Collector!</h1>
+        <div id="directions">
+            <p>You are given a random number.</p>
+            <p>By clicking on one of the five crystals you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game resets the random number, it also changes the values of each crystal.</p>
+        </div>
+        <div id="computer-random"></div>
+        <div id="counter">
+            <p>Wins: <span id="wins"></span></p>
+            <p>Losses: <span id="losses"></span></p>
+        </div>
+        <div id="buttons">
+            <button id="button1"><img src="./images/blue-crystal.png" alt="Blue Crystal"></button>
+            <button id="button2"><img src="./images/green-crystal.png" alt="Green Crystal"></button>
+            <button id="button3"><img src="./images/grey-crystal.png" alt="Grey Crystal"></button>
+            <button id="button4"><img src="./images/pink-crystal.png" alt="Pink Crystal"></button>
+            <button id="button5"><img src="./images/purple-crystal.png" alt="Purple Crystal"></button>
+        </div>
+        <div class="socres">Your total score is:</div>
+        <div class="scores"><span id="result"></span></div>
+        <br><br>
+        <button id="reset"><h1>RESET</h1></button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./javascript/game.js"></script>
+</body>
+</html>
