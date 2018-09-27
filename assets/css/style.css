@@ -1,0 +1,116 @@
+h1 {
+    width: 100%;
+    background: url(../images/h1-background.jpg);
+    opacity: 0.8;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 45px;
+    margin: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#directions{
+    background-color: rgb(109, 128, 184, 0.8);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 20px 12% 20px 12%;
+    border: 5px outset rgb(0, 128, 0, 0.8);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.display {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.counter {
+    margin: 30px;
+    padding: 30px;
+    color: green;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+    display: inline;
+}
+
+.message{
+    display: inline;
+    color: green;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+}
+
+#buttons {
+    text-align: center;
+}
+
+.button {
+    border: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#footer {
+    background: url(../images/h1-background.jpg);
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#reset {
+    background: url(../images/h1-background.jpg);
+    border: solid white;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1130px) {
+    img {
+        width: 110px;
+        height: 110px;
+    }
+}
+@media screen and (max-width: 680px){
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #directions {
+        font-size: 12px;
+        margin: 5px 5% 5px 5%;
+    }
+
+    .display {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .counter {
+        margin: 5px;
+        padding: 5px;
+        color: green;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 15px;
+        display: block;
+    }
+
+    .message{
+        display: inline;
+        color: green;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 15px;
+    }
+}

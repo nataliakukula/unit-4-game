@@ -16,7 +16,9 @@ $(document).ready(function() {
         result = 0;
         randomNumber();
         randomButtons();
+        $("#result").empty();
         };
+
         //call gameRest function to set the state of the app
         gameReset();
 
@@ -35,6 +37,7 @@ $(document).ready(function() {
         randomBtn4 = Math.floor(Math.random() * 19 + 1);
         randomBtn5 = Math.floor(Math.random() * 19 + 1);
         };
+
         //call the randomButtons function to set the number values for each button
         randomButtons();
 
@@ -43,11 +46,13 @@ $(document).ready(function() {
 
         if (result === computerRandom) {
             wins++;
+            $("#result-message").text("You won 🤙🏼  - Play again!");
             $("#wins").text(wins);
             gameReset();
 
         } else if (result > computerRandom) {
             losses++;
+            $("#result-message").text("You lost 👅  - Play again!");
             $("#losses").text(losses);
             gameReset();
         };
@@ -91,6 +96,7 @@ $(document).ready(function() {
 
     //create an additional on click event for a reset button
     $("#reset").on("click", function() {
+        
         // Call gameReset function to reset the state of our app
         gameReset();
       });
