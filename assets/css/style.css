@@ -87,6 +87,7 @@ img {
     }
 
     #directions {
+        color: green;
         font-size: 12px;
         margin: 5px 5% 5px 5%;
     }
